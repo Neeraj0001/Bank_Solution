@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/Footer-Dark.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/Team-Grid.css' %}" >
+    <style>
+        .avatar {
+          vertical-align: middle;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+         
+        }
+        </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+        <div class="container"><a class="navbar-brand" href="#"><i class="fa fa-bank"></i>&nbsp;FRSM's Bank Solution</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+   <img class="img-fluid avatar" src="{{profile.profile_pics.url}}"  alt="">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Hii {{user.username}} ..</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'logoutuser' %}">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">Secure Transaction&nbsp;</h1>
+                <h2 class="masthead-subheading mb-0">With The Help Of Facial Recognition</h2><a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" href="{% url 'update' %}">Update Info</a></div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+</br>
+    <h2 class="display-4" style="text-align:center;">Follow these Steps</h2>
+ 
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{% static 'images/01.png' %}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h5 class="display-4">Step-1) Bank Dataset from Web Page</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{% static 'images/02.png' %}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="display-4">Step-2) User Dashboard after authentication</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{% static 'images/03.png' %}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h5 class="display-4">Step-3) Add Information</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{% static 'images/1.jpeg' %}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="display-4">Step-4) GUI App for Face Recognition. It shows welcome window for face scanning system.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{% static 'images/2.jpeg' %}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">Step-5) Click on start scanning.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{% static 'images/3.jpeg' %}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="display-4">Step-6) It will scan your video and do liveness detection by counting no. of eye blinks.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{% static 'images/4.jpeg' %}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">Step-7) From scanned video, it will take one screenshot as no. of eye blinks reaches to count value 2.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{% static 'images/05.jpeg' %}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="display-4">Step-8) Then system will perform face identification by finding match with the avaliable images inside the system.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h3 style="text-align:center;">The images inside the system will be accessed from our this self created bank website. It will access phone number, name of the user also.This website stores all required bank details of the user such as account no., debit card_no., etc.</h3>
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{% static 'images/6.jpeg' %}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">Step-9) After face matching successfully, it will ask you for phone no. and amount u want to pay.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{% static 'images/7.jpeg' %}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="display-4">Step-10) Then click submit button, and ur payment would be successful.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section>
+    <!-- <div class="team-grid">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Team Contribution</h2>
+
+            </div>
+            <div class="row people">
+                <div class="col-md-4 item">
+                    <div class="box" style="background-image:url(/static/images/lokesh.png)">
+                        <div class="cover">
+                            <h3 class="name">Lokesh Kumar</h3>
+                            <p class="title">AI</p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="col-md-4  item">
+                        <div class="box" style="background-image:url(/static/images/pp.jpg)">
+                            <div class="cover">
+                                <h3 class="name">Neeraj Pandey</h3>
+                                <p class="title">WEB Developer</p>
+                                <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 item">
+                    <div class="box" style="background-image:url(/static/images/uk.png)">
+                        <div class="cover">
+                            <h3 class="name">AI</h3>
+                            <p class="title">Model </p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>FRSM'S Bank Solution</h3>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">Copyright @ Hackathon Hunterzzz</p>
+            </div>
+        </footer>
+    </div>
+    <script src="{% static 'js/jquery.min.js' %}"></script> 
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script> 
+</body>
+
+</html>
